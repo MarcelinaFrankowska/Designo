@@ -1,0 +1,93 @@
+@import "shared.css";
+
+
+.location img {
+    display: block;
+    width: 100vw;
+}
+
+.location .desktop {
+    display: none;
+}
+
+
+@media(min-width:768px) {
+
+    .canada,
+    .uk,
+    .australia {
+        border-radius: 20px;
+    }
+
+    .location img {
+        width: 100%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+
+    .locations .ptrn2 {
+        padding: 10%;
+        margin-top: 5%;
+        border: 2px solid transparent;
+        border-radius: 20px;
+    }
+
+    .locations .ptrn2 h2 {
+        text-align: left;
+    }
+
+    .locations .contact {
+        margin-top: 0;
+        padding: 0;
+        text-align: left;
+    }
+
+    .locations .contact div {
+        margin-top: 0;
+        flex-basis: 50%;
+    }
+
+    .locations .contact div p,
+    .locations .contact div h4 {
+        padding: 0;
+        text-align: left;
+    }
+
+}
+
+@media(min-width:1200px) {
+    .location {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .location:nth-child(2) {
+        flex-direction: row;
+    }
+
+    .location:nth-child(2) img {
+        margin-left: 3%;
+    }
+
+    .location:nth-child(2) .ptrn2 {
+        margin-right: 0;
+    }
+
+    .location img {
+        flex-basis: 30%;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+
+    .locations .ptrn2 {
+        flex-basis: 70%;
+        padding: 0 5%;
+        margin: 0 3%;
+        border: 2px solid transparent;
+    }
+
+    .locations h2 {
+        margin-top: 7%;
+    }
+}

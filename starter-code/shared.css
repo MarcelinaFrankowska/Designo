@@ -1,0 +1,873 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 19px;
+}
+
+/*Sizes*/
+.mobile {
+    display: block;
+}
+
+.tablet,
+.desktop {
+    display: none !important
+}
+
+/*Sections*/
+
+section {
+    margin-bottom: 20%
+}
+
+.orange {
+    background-color: #E7816B;
+    color: white;
+}
+
+.light {
+    background-color: #FDF3F0;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+.first {
+    margin-top: 25%;
+}
+
+.talk {
+    position: relative;
+    top: 20vh;
+    width: 90%;
+    margin: 0 auto;
+    padding: 5% 0 10%;
+    background-image: url("./assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg");
+    background-repeat: repeat;
+    background-position: 99% 99cm;
+    background-size: 200%;
+}
+
+/*Elements*/
+
+button {
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    padding: 2% 5%;
+    margin: 5% 0;
+    cursor: pointer;
+}
+
+.btnOrange {
+    background-color: #E7816B;
+    color: white;
+}
+
+h1 {
+    font-size: 30px;
+    padding: 15% 5% 5%;
+}
+
+.light h1,
+.light h2,
+.ptrn2 h1,
+.ptrn2 h2,
+.ptrn3 h1,
+.ptrn3 h2 {
+    color: #E7816B;
+    padding: 5% 0
+}
+
+h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 5% 0;
+}
+
+
+p {
+    font-weight: 400;
+    padding: 0 10%;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    line-height: 2;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+
+/*Styles*/
+
+.rounded {
+    border: 2px solid transparent;
+    border-radius: 8px;
+}
+
+
+.shadow {
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .6)
+}
+
+.centered {
+    position: absolute !important;
+    margin: 0 !important;
+    height: auto !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bg-image {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.circleS {
+    background-image: url(./assets/shared/desktop/bg-pattern-small-circle.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ptrn1 {
+    background-image: url("./assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: -13cm 2cm;
+    background-size: 400%;
+}
+
+.ptrn2,
+.ptrn3 {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.ptrn2::before,
+.ptrn3::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -70%;
+    z-index: -1;
+    background: url(./assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg) 0 0 no-repeat;
+    background-color: #FDF3F0;
+    transform: rotate(180deg);
+}
+
+.ptrn2::before {
+    background-size: 120%;
+    background-position: -11cm 1cm;
+}
+
+.ptrn3::before {
+    background-size: 120%;
+    background-position: -11cm 8cm;
+}
+
+.ptrn2 {
+    padding: 20% 15%;
+}
+
+.ptrn2 div,
+.ptrn3 div {
+    margin-top: 10%;
+    margin-bottom: 15%
+}
+
+.ptrn3 p {
+    padding-top: 5%;
+}
+
+.design {
+    background-image: url("./assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg");
+    background-repeat: repeat;
+    background-position: 10cm 0cm;
+    background-size: 200%
+}
+
+.pb20 {
+    padding-bottom: 20%
+}
+
+
+/*----------------------------------------------------------------------------------------*/
+
+
+/*   Header Mobile  */
+
+.nav-bar {
+    overflow: hidden;
+
+}
+
+.logo {
+    position: absolute;
+    width: 60%;
+    top: 5%;
+    left: 5%;
+}
+
+.hamburger {
+    position: absolute;
+    top: 5%;
+    right: 5%
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    margin-top: 90px;
+    padding: 10% 0;
+}
+
+.menu a {
+    padding: 14px 0;
+    display: block;
+}
+
+
+/* Offer */
+
+.offer {
+    margin-top: 30%;
+}
+
+.offer div {
+    width: 90%;
+    height: 25vh;
+    margin: 5% auto;
+    position: relative;
+}
+
+.web {
+    background-image: url(./assets/home/mobile/image-web-design.jpg);
+
+}
+
+.app {
+    background-image: url(./assets/home/mobile/image-app-design.jpg);
+}
+
+.graphic {
+    background-image: url(./assets/home/mobile/image-graphic-design.jpg);
+}
+
+.arrow {
+    padding-left: 5%
+}
+
+/*Projects*/
+
+.project {
+    width: 90%;
+    margin: 20% auto;
+}
+
+.project img {
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+
+.project div {
+    border-radius: 0 0 20px 20px;
+}
+
+.project p {
+    padding-bottom: 10%
+}
+
+
+/* Footer Mobile */
+
+footer {
+    padding-top: 25vh;
+}
+
+.links a,
+.links a:visited {
+    display: block;
+}
+
+.logoL {
+    width: 60%;
+    padding: 10%;
+}
+
+footer div {
+    padding: 5% 0
+}
+
+.social img {
+    padding-right: 3%;
+    padding-bottom: 30%
+}
+
+hr {
+    display: none;
+}
+
+@media(min-width:768px) {
+
+    * {
+        font-size: 19px;
+    }
+
+    /*Sizes*/
+
+    .mobile,
+    .desktop {
+        display: none !important;
+    }
+
+    .tablet {
+        display: block !important;
+    }
+
+
+    /*Sections*/
+
+
+    .first {
+        width: 90%;
+        margin: 22% auto 0 !important;
+        border: 2px solid transparent;
+        border-radius: 20px;
+    }
+
+    .talk {
+        position: relative;
+        top: 10vh;
+        width: 90%;
+        margin: 0 auto;
+        padding: 1% 0 6%;
+        background-image: url("./assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg");
+        background-position: -12cm center;
+        background-repeat: no-repeat;
+        background-size: 220%;
+    }
+
+    /*Styles*/
+
+    .rounded {
+        border-radius: 20px;
+    }
+
+    .rounded-Tablet {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .rounded-Tablet img {
+        width: 100%;
+        display: block;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .rounded-Tablet div {
+        border-radius: 0 0 20px 20px;
+    }
+
+    .rounded-Tablet p {
+        padding-bottom: 10%
+    }
+
+    .design {
+        background-image: url("./assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg");
+        background-repeat: repeat;
+        background-position: 22cm 4cm;
+        background-size: 120%
+    }
+
+    .pb20 {
+        padding-bottom: 10%;
+    }
+
+    .ptrn1 {
+        background-image: url("./assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg");
+        background-position: 4cm 3cm;
+    }
+
+    .ptrn2 {
+        background-image: url(./assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg);
+        background-color: #FDF3F0;
+        background-repeat: no-repeat;
+        background-size: 150%;
+        background-position: -9cm -9cm;
+    }
+
+    .ptrn2::before {
+        display: none
+    }
+
+
+    .ptrn3::before {
+        background: url(./assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg) 0 0 no-repeat;
+        background-color: #FDF3F0;
+        background-size: 80%;
+        background-position: -7cm 9cm;
+    }
+
+    .ptrn2 div,
+    .ptrn3 div {
+        margin-bottom: 0
+    }
+
+    .ptrn3 p {
+        padding-top: 0;
+    }
+
+    /*Elements*/
+
+
+    h1 {
+        font-size: 45px;
+        padding: 10% 15% 5%;
+    }
+
+    h2 {
+        font-size: 35px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        padding: 3% 0;
+    }
+
+    h3 {
+        font-size: 22px;
+        text-transform: uppercase;
+        padding: 5% 0;
+    }
+
+    a,
+    a:visited {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        line-height: 2;
+        letter-spacing: 2px;
+        font-weight: 400;
+    }
+
+    /* Header Tablet */
+
+    .hamburger {
+        display: none;
+    }
+
+    .menu {
+        position: absolute;
+        display: block !important;
+        background-color: white;
+        padding: 0;
+        margin-top: 0;
+        width: 60%;
+        top: 7%;
+        right: 5%
+    }
+
+    .menu a {
+        padding: 0 0 0 5%;
+        display: inline-block;
+        color: black;
+
+    }
+
+    .logo {
+        top: 7%;
+        width: 30%;
+    }
+
+
+    /* Offer */
+
+    .offer {
+        margin-top: 10%;
+    }
+
+    .web {
+        background-image: url(./assets/home/tablet/image-web-design.jpg);
+
+    }
+
+    .app {
+        background-image: url(./assets/home/tablet/image-app-design.jpg);
+    }
+
+    .graphic {
+        background-image: url(./assets/home/tablet/image-graphic-design.jpg);
+    }
+
+
+    /*Projects*/
+
+    .project {
+        display: flex;
+        width: 90%;
+        margin: 20% auto;
+    }
+
+    .project img {
+        width: 100%;
+        display: block;
+        border-radius: 20px 0 0 20px;
+    }
+
+    .light,
+    .pic {
+        flex-basis: 50%;
+    }
+
+    .project div:nth-child(2) {
+        display: flex;
+        align-items: center;
+        border-radius: 0 20px 20px 0;
+        text-align: center;
+    }
+
+    .project p {
+        padding-bottom: 10%
+    }
+
+
+    /* Footer Tablet */
+
+    footer {
+        padding-top: 10vh;
+    }
+
+    .nav {
+        display: flex;
+        padding-top: 10%
+    }
+
+    .logoL {
+        display: block;
+        width: 35%;
+        height: 35%;
+        padding: 0 0 0 5%;
+    }
+
+    .links {
+        padding: 0 5% 0 0;
+        width: 65%;
+    }
+
+    .links a,
+    .links a:visited {
+        display: inline-block;
+    }
+
+    footer a,
+    footer a:visited {
+        line-height: 1;
+        padding-left: 5%;
+    }
+
+    .contact {
+        display: flex;
+        align-content: space-between;
+        padding: 0 5%;
+    }
+
+    .adress,
+    .mail,
+    .social {
+        flex-basis: 30%;
+    }
+
+    .social {
+        flex-grow: 2;
+    }
+
+    .adress p,
+    .mail p {
+        text-align: left;
+        color: grey;
+        font-size: 15px;
+    }
+
+    .mail p {
+        font-weight: bold;
+    }
+
+    .adress p:nth-child(1) {
+        font-weight: bold;
+    }
+
+    .social a {
+        padding-left: 2%;
+    }
+
+    .social img {
+        padding-bottom: 0;
+    }
+
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #333136;
+        margin: 1em 5%;
+        padding: 0;
+    }
+}
+
+@media(min-width:1200px) {
+    * {
+        font-size: 16px;
+    }
+
+    /*Sizes*/
+
+    .mobile,
+    .tablet,
+    .mob-tab {
+        display: none !important;
+    }
+
+    .desktop {
+        display: block !important;
+    }
+
+    /*Sections*/
+
+    .first {
+        margin: 15% auto 0 !important;
+    }
+
+    .talk {
+        display: flex;
+        position: relative;
+        top: 10vh;
+        width: 90%;
+        margin: 0 auto;
+        background-position: 0cm 5cm;
+        background-repeat: repeat;
+        background-size: 100%;
+    }
+
+    .talk h1 {
+        text-align: left;
+        padding: 10% 15% 0 0;
+    }
+
+    .talk p {
+        text-align: left;
+        padding: 2% 15% 0 0;
+    }
+
+    .talk div {
+        flex-basis: 50%;
+        padding-left: 5%;
+        padding-bottom: 10%
+    }
+
+    .talk .touchBtn {
+        position: relative;
+        padding: 0;
+    }
+
+    .touchBtn button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+    }
+
+    .loc {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    /*Styles*/
+
+    .pb20 {
+        padding-bottom: 8%;
+    }
+
+    .plr30 {
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+
+    .rounded-Desktop,
+    .rounded-Desktop-Rev {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .rounded-Desktop img {
+        width: 100%;
+        display: block;
+        border-radius: 20px 0 0 20px;
+    }
+
+    .rounded-Desktop div {
+        border-radius: 0 20px 20px 0;
+    }
+
+    .rounded-Desktop-Rev img {
+        width: 100%;
+        display: block;
+        border-radius: 0 20px 20px 0;
+    }
+
+    .rounded-Desktop-Rev div {
+        border-radius: 20px 0 0 20px;
+    }
+
+    .ptrn1 {
+        background-image: url("./assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg");
+        background-position: 15cm 0cm;
+        background-size: 160%;
+    }
+
+    .ptrn2 {
+
+        background-size: 100%;
+        background-position: -6cm 2.5cm;
+    }
+
+    .ptrn3::before {
+        background: url(./assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg) 0 0 no-repeat;
+        background-color: #FDF3F0;
+        background-repeat: no-repeat;
+        background-size: 70%;
+        background-position: 0cm 0.5cm;
+    }
+
+    /*Elements*/
+
+
+    h1 {
+        font-size: 45px;
+        padding: 8% 15% 5%;
+    }
+
+    /* Header Desktop */
+
+    .menu {
+        width: 60%;
+        right: 5%;
+        text-align: right;
+    }
+
+    .menu a {
+        padding: 0 0 0 5%;
+        display: inline-block;
+    }
+
+    .logo {
+        width: 15%;
+    }
+
+    /* Offer */
+
+    .offer {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        margin: 10% 5% 0;
+        height: 60vh;
+    }
+
+
+    .offer .web {
+        background-image: url(./assets/home/desktop/image-web-design-large.jpg);
+        grid-row-start: 1;
+        grid-row-end: span 2;
+        height: 102%;
+        width: 97%;
+        margin: 0;
+
+    }
+
+    .offer .app {
+        background-image: url(./assets/home/desktop/image-app-design.jpg);
+        margin: 0;
+        width: 97%;
+        height: 100%
+    }
+
+    .offer .graphic {
+        background-image: url(./assets/home/desktop/image-graphic-design.jpg);
+        margin: 2% 0 0 0;
+        width: 97%;
+        height: 100%
+    }
+
+    .offer .two {
+        margin: 2% 0 0 0;
+        width: 97%;
+        grid-row-start: 1;
+        grid-row-end: span 1;
+        height: 130%
+    }
+
+
+    /*Projects*/
+
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10% 5%;
+        align-items: left;
+    }
+
+
+    .project {
+        display: block;
+        flex-basis: 30%;
+        margin: 2% 1%;
+    }
+
+    .project img {
+        border-radius: 20px 20px 0 0;
+    }
+
+    .project div {
+        border-radius: 0 0 20px 20px !important;
+    }
+
+
+    /* Footer Desktop */
+
+    .logoL {
+        display: block;
+        width: 25%;
+        height: 25%;
+        padding: 0 0 0 5%;
+    }
+
+    .links {
+        text-align: right;
+        padding: 0;
+        padding-left: 30%
+    }
+
+}

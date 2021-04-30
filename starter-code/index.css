@@ -1,0 +1,119 @@
+@import "shared.css";
+
+
+/* Intro */
+
+.intro {
+    height: 120vh;
+    overflow: hidden;
+}
+
+.phoneDiv {
+    position: relative;
+}
+
+.phone {
+    position: absolute;
+    display: block;
+    width: 150vw;
+    top: -100px;
+    left: -25%;
+    margin: 0 auto;
+}
+
+/* Features */
+.features {
+    margin-bottom: 0;
+}
+
+.features div:nth-child(-n+2) {
+    padding-bottom: 10%;
+}
+
+@media(min-width:768px) {
+
+    /* Intro */
+
+    .intro {
+        height: 100vh;
+
+    }
+
+    .phone {
+        width: 90vw;
+        top: -150px;
+        left: auto;
+    }
+
+
+    /* Features */
+
+    .features div:nth-child(-n+2) {
+        padding-bottom: 5%;
+    }
+
+    .feature {
+        display: flex;
+        padding: 0 5%;
+    }
+
+    .feature p {
+        text-align: left;
+    }
+
+}
+
+@media(min-width:1200px) {
+    /* Intro */
+
+    .intro {
+        display: flex;
+        height: 100%;
+        padding-bottom: 10%;
+    }
+
+    .intro div:nth-child(1) {
+        flex-basis: 60%;
+        padding-left: 5%;
+    }
+
+    .intro div h1,
+    .intro div p {
+        text-align: left;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .btnDiv {
+        text-align: left;
+    }
+
+    .intro .phoneDiv {
+        flex-basis: 40%;
+        padding-right: 5%
+    }
+
+    .phone {
+        width: 120%;
+        top: 10px;
+
+    }
+
+    /* Features */
+
+    .features {
+        display: flex;
+    }
+
+    .feature {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 30%;
+        padding: 5% 0 5% 5%;
+    }
+
+    .feature p {
+        text-align: center;
+    }
+
+}

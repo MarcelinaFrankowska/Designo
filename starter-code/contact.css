@@ -1,0 +1,129 @@
+@import "shared.css";
+
+.text {
+    background-image: url("./assets/contact/mobile/bg-pattern-hero-contact-mobile.svg");
+    background-position: -3cm 0.5cm;
+    background-repeat: no-repeat;
+}
+
+#booking {
+    padding: 10% 0;
+
+}
+
+.form-control {
+    border: 0px;
+    border-radius: 0px;
+    border-bottom: 2px solid #fccec4;
+    padding: 4% 0
+}
+
+::placeholder {
+    color: #fccec4;
+    opacity: 1;
+    text-align: left;
+}
+
+.form-label {
+    margin: 5% 15%;
+    color: #fccec4;
+    text-align: left;
+}
+
+.message {
+    height: 100px;
+}
+
+footer {
+    padding-top: 5vh;
+}
+
+@media(min-width:768px) {
+    .contactUs {
+        padding-top: 0;
+        background-image: url("./assets/contact/desktop/bg-pattern-hero-desktop.svg");
+        background-size: 110%;
+        background-position: -4cm -3cm;
+        background-repeat: no-repeat;
+
+    }
+
+    .text {
+        padding-left: 10%;
+        padding-right: 10%;
+        background-image: none;
+
+    }
+
+    h1 {
+        text-align: left;
+        padding-left: 0
+    }
+
+    .text p {
+        text-align: left;
+        padding: 0;
+
+    }
+
+    .form-control {
+        background-color: transparent
+    }
+
+    /*Booking Form*/
+
+    .form-group {
+        text-align: left;
+        padding-left: 10%;
+    }
+
+    .form-control {
+        width: 90%;
+    }
+
+    .form-label {
+        text-align: left;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    form button {
+        position: relative;
+        right: -30%
+    }
+
+    /*Locations*/
+    section {
+        padding-top: 20%
+    }
+
+}
+
+@media(min-width:1200px) {
+    .first {
+        display: flex;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .text {
+        flex-basis: 50%;
+        position: relative;
+    }
+
+    .text div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    #booking {
+        flex-basis: 50%;
+        position: relative;
+        padding: 0
+    }
+
+
+}

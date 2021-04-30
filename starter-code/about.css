@@ -1,0 +1,64 @@
+@import "shared.css";
+
+.about {
+    margin-bottom: 0;
+}
+
+.about .orange {
+    background-image: url("./assets/about/mobile/bg-pattern-hero-about-mobile.svg");
+    background-position: -5cm -4cm;
+    background-repeat: no-repeat;
+}
+
+.about img,
+.talent img,
+.deal img {
+    width: 100%
+}
+
+@media(min-width:768px) {
+
+    .talent {
+        margin-top: 20%
+    }
+
+    .about .orange {
+        background-image: url("./assets/about/desktop/bg-pattern-hero-about-desktop.svg");
+        background-position: -3cm -10cm;
+    }
+
+    .about .orange p {
+        padding-bottom: 0;
+    }
+}
+
+@media(min-width:1200px) {
+
+    section {
+        display: flex;
+    }
+
+    .about {
+        padding-bottom: 8%;
+    }
+
+    .about .orange {
+        background-position: center;
+    }
+
+    .deal,
+    .about {
+        flex-direction: row-reverse;
+    }
+
+    .about .orange,
+    .talent .light-orange,
+    .deal .light-orange {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+}
